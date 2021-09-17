@@ -1,0 +1,20 @@
+server:
+ port: 8081
+ servlet:
+  context-path: /api	
+spring:
+ datasource-fc:
+  url: jdbc:mysql://localhost:3306/finance
+  username: root
+  password: 1089
+  driver-class-name: com.mysql.cj.jdbc.Driver
+ datasource-oauth:
+  url: jdbc:mysql://localhost:3306/oauth
+  username: root
+  password: 1089
+  driver-class-name: com.mysql.cj.jdbc.Driver
+host:
+ full:
+  dns:
+   auth:
+    link: http://localhost:8081/api/oauth/token
